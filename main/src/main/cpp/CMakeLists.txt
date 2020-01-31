@@ -91,7 +91,7 @@ if (NOT ${CMAKE_LIBRARY_OUTPUT_DIRECTORY} MATCHES "build/intermediates/cmake/.*s
             -DGIT_VERSION_STRING=\"${OPENVPN3_GIT}\"
             -DNO_ROUTE_EXCLUDE_EMULATION
             -DOPENVPN_SHOW_SESSION_TOKEN
-            -DOPENSSL_API_COMPAT=0x10200000L
+            -DOPENSSL_API_COMPAT=0xFF
 
             )
 else ()
@@ -221,7 +221,7 @@ target_compile_definitions(openvpn PRIVATE
         -DCONFIGURE_GIT_REVISION=\"${OPENVPN2_GIT}\"
         -DCONFIGURE_GIT_FLAGS=\"\"
         -DTARGET_ABI=\"${ANDROID_ABI}\"
-        -DOPENSSL_API_COMPAT=0x10200000L
+        -DOPENSSL_API_COMPAT=0xFF
         )
 
 if (${OPENVPN2MBED})

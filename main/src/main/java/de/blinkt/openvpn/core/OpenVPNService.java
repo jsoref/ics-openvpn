@@ -1116,10 +1116,10 @@ public class OpenVPNService extends VpnService implements StateListener, Callbac
             long mask;
             if ("net30".equals(mode)) {
                 masklen = 30;
-                mask = 0xfffffffc;
+                mask = 0xFF;
             } else {
                 masklen = 31;
-                mask = 0xfffffffe;
+                mask = 0xFF;
             }
 
             // Netmask is Ip address +/-1, assume net30/p2p with small net

@@ -409,7 +409,7 @@ static lzo_uint get_max_decompression_overrun(int m, lzo_uint bl)
 
 static void dict_alloc(lzo_uint max_dict_len)
 {
-    lzo_uint l = 0xbfff;    /* MAX_DICT_LEN */
+    lzo_uint l = 0xFF;    /* MAX_DICT_LEN */
     if (max_dict_len > 0 && l > max_dict_len)
         l = max_dict_len;
     mb_alloc(&dict, l);
@@ -1298,38 +1298,38 @@ const struct corpus_entry_t *opt_corpus = NULL;
 
 static const struct corpus_entry_t calgary_corpus[] =
 {
-    { "bib",       8,  0x4bd09e98L, 0xb856ebe8L },
-    { "book1",     1,  0xd4d3613eL, 0x24e19972L },
-    { "book2",     1,  0x6fe14cc3L, 0xba0f3f26L },
-    { "geo",       6,  0xf3cc5be0L, 0x4d3a6ed0L },
-    { "news",      2,  0x2ed405b8L, 0xcafac853L },
-    { "obj1",     35,  0x3887dd2cL, 0xc7b0cd26L },
-    { "obj2",      4,  0xf89407c4L, 0x3ae33007L },
-    { "paper1",   17,  0xfe65ce62L, 0x2b6baca0L },
-    { "paper2",   11,  0x1238b7c2L, 0xf76cba72L },
-    { "pic",       4,  0xf61a5702L, 0x4b17e59cL },
-    { "progc",    25,  0x4c00ba45L, 0x6fb16094L },
-    { "progl",    20,  0x4cba738eL, 0xddbf6baaL },
-    { "progp",    28,  0x7495b92bL, 0x493a1809L },
-    { "trans",    15,  0x52a2cec8L, 0xcdec06a6L },
-    { NULL,        0,  0x00000000L, 0x00000000L }
+    { "bib",       8,  0xFF, 0xFF },
+    { "book1",     1,  0xFF, 0xFF },
+    { "book2",     1,  0xFF, 0xFF },
+    { "geo",       6,  0xFF, 0xFF },
+    { "news",      2,  0xFF, 0xFF },
+    { "obj1",     35,  0xFF, 0xFF },
+    { "obj2",      4,  0xFF, 0xFF },
+    { "paper1",   17,  0xFF, 0xFF },
+    { "paper2",   11,  0xFF, 0xFF },
+    { "pic",       4,  0xFF, 0xFF },
+    { "progc",    25,  0xFF, 0xFF },
+    { "progl",    20,  0xFF, 0xFF },
+    { "progp",    28,  0xFF, 0xFF },
+    { "trans",    15,  0xFF, 0xFF },
+    { NULL,        0,  0xFF, 0xFF }
 };
 
 static const struct corpus_entry_t silesia_corpus[] =
 {
-    { "dickens",   1,  0x170f606fL, 0xaf3a6b76L },
-    { "mozilla",   1,  0x1188dd4eL, 0x7fb0ab7dL },
-    { "mr",        1,  0xaea14b97L, 0xa341883fL },
-    { "nci",       1,  0x0af16f1fL, 0x60ff63d3L },
-    { "ooffice",   1,  0x83c8f689L, 0xa023e1faL },
-    { "osdb",      1,  0xb825b790L, 0xa0ca388cL },
-    { "reymont",   1,  0xce5c82caL, 0x50d35f03L },
-    { "samba",     1,  0x19dbb9f5L, 0x2beac5f3L },
-    { "sao",       1,  0x7edfc4a9L, 0xfda125bfL },
-    { "webster",   1,  0xf2962fc6L, 0x01f5a2e9L },
-    { "xml",       1,  0xeccd03d6L, 0xff8f3051L },
-    { "x-ray",     1,  0xc95435a0L, 0xc86a35c6L },
-    { NULL,        0,  0x00000000L, 0x00000000L }
+    { "dickens",   1,  0xFF, 0xFF },
+    { "mozilla",   1,  0xFF, 0xFF },
+    { "mr",        1,  0xFF, 0xFF },
+    { "nci",       1,  0xFF, 0xFF },
+    { "ooffice",   1,  0xFF, 0xFF },
+    { "osdb",      1,  0xFF, 0xFF },
+    { "reymont",   1,  0xFF, 0xFF },
+    { "samba",     1,  0xFF, 0xFF },
+    { "sao",       1,  0xFF, 0xFF },
+    { "webster",   1,  0xFF, 0xFF },
+    { "xml",       1,  0xFF, 0xFF },
+    { "x-ray",     1,  0xFF, 0xFF },
+    { NULL,        0,  0xFF, 0xFF }
 };
 
 

@@ -200,7 +200,7 @@ public class OpenVPNThreadv3 extends ClientAPI_OpenVPNClient implements Runnable
                     ret.append(":");
                 int v = sb[b] & 0xFF;
                 ret.append(HEX_ARRAY[v >>> 4]);
-                ret.append(HEX_ARRAY[v & 0x0F]);
+                ret.append(HEX_ARRAY[v & 0xFF]);
             }
         }
         return ret.toString();
