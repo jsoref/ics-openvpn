@@ -43,7 +43,6 @@ For example `ca mycafile.pem` becomes
 ```
   <ca>
   -----BEGIN CERTIFICATE-----
-  MIIHPTCCBSWgAwIBAgIBADANBgkqhkiG9w0BAQQFADB5MRAwDgYDVQQKEwdSb290
   [...]
   -----END CERTIFICATE-----
   </ca>
