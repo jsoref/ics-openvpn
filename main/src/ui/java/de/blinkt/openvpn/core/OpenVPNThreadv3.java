@@ -344,7 +344,7 @@ public class OpenVPNThreadv3 extends ClientAPI_OpenVPNClient implements Runnable
     @Override
     public void sendAccMessage(AccMessage accMessage) {
         mHandler.post(() -> {
-            /* The C++ API here is a bit special in allowing a std::string with arbitary binary content */
+            /* The C++ API here is a bit special in allowing a std::string with arbitrary binary content */
             String message = new  String(accMessage.getMessage());
             send_app_control_channel_msg(accMessage.getProtocol(), message);
         });
